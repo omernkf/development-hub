@@ -1,0 +1,11 @@
+{
+  "name": "OMER DESIGN",
+  "short_name": "OMER DESIGN",
+  "description": "حلول رقمية متكاملة للمواقع",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1428",
+  "theme_color": "#0A1428",
+  "lang": "ar",
+  "dir": "rtl"
+}

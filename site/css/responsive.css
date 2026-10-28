@@ -1,0 +1,109 @@
+/* ============================================
+   OMER DESIGN — Responsive
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: grid;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin-inline: auto;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .page-header {
+    padding-top: 5.5rem;
+  }
+
+  .ecosystem-arrow {
+    display: none;
+  }
+
+  .ecosystem {
+    gap: 0.6rem;
+  }
+
+  .ecosystem-item {
+    min-width: 100px;
+    padding: 0.85rem 1rem;
+  }
+
+  .whatsapp-float {
+    bottom: 1rem;
+    left: 1rem;
+    width: 52px;
+    height: 52px;
+  }
+
+  .whatsapp-float .tooltip {
+    display: none;
+  }
+
+  .cta-banner .btns {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    padding-inline: 4%;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+}
