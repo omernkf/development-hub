@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+node_modules/
+dist/
+build/
+*.sqlite
+*.db
+*.log
+.DS_Store
