@@ -1,0 +1,30 @@
+name: Extract OMER DESIGN website
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'OMER-DESIGN-GitHub-Netlify-Connected.zip'
+      - '.github/workflows/extract-site.yml'
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract site files from supplied archive
+        run: |
+          set -euo pipefail
+          unzip -o 'OMER-DESIGN-GitHub-Netlify-Connected.zip' 'site/*' -d .
+          test -s site/index.html
+          test -s site/developer.html
+          test -s site/js/developer.js
+      - name: Commit extracted website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish OMER DESIGN site source from archive"
+            git push
+          fi
