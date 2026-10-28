@@ -1,0 +1,38 @@
+{
+  "name": "OMER DESIGN Development Hub",
+  "website": "https://omdesign.netlify.app/",
+  "github": "https://github.com/omernkf",
+  "projects": [
+    {
+      "id": "nkf-yemen",
+      "name": "National Kidney Foundation – Yemen",
+      "type": "website",
+      "visibility": "public",
+      "website": "https://nkf-yemen.netlify.app/",
+      "repository": "https://github.com/omernkf/nkf-yemen"
+    },
+    {
+      "id": "yemen-phone-ai",
+      "name": "Yemen Phone AI",
+      "type": "android",
+      "visibility": "private-source",
+      "repository": null,
+      "releases": null,
+      "description": "Yemeni phone number lookup Android app; source repository is private."
+    },
+    {
+      "id": "bin-mabrouk",
+      "name": "Bin Mabrouk Portfolio",
+      "type": "website",
+      "website": "https://bin-mabrouk.vercel.app/",
+      "repository": null
+    },
+    {
+      "id": "omer-design",
+      "name": "OMER DESIGN",
+      "type": "developer-portfolio",
+      "website": "https://omdesign.netlify.app/",
+      "repository": null
+    }
+  ]
+}
